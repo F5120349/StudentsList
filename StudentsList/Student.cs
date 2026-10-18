@@ -13,26 +13,16 @@ namespace StudentsList
         public int mark { get; set; }
         public int EnrolmentYear { get; set; }
 
-        public Student()
-        {
-            surname = "Unknown";
-            forename = "Unknown";
-            age = 0;
-            course = "Unknown";
-            mark = 0;
-            EnrolmentYear = 0;
-        }
-
         public Student(string surname, string forename, int age,
             string course,
             int mark, int EnrolmentYear)
         {
-            surname = surname;
-            forename = forename;
-            age = age;
-            course = course;
-            mark = mark;
-            EnrolmentYear = EnrolmentYear;
+            this.surname = surname;
+            this.forename = forename;
+            this.age = age;
+            this.course = course;
+            this.mark = mark;
+            this.EnrolmentYear = EnrolmentYear;
         }
 
         public override string ToString()
