@@ -25,6 +25,12 @@ var CS_Students_Descending = students
 
 DisplayStudents(CS_Students_Descending);
 
+Console.WriteLine("\nStudents who enrolled after 2020 sorted by enrolment year\n");
+
+var Students_After_2020 = students
+    .Where(s => s.EnrolmentYear > 2020) // filter by students who enrolled after 2020
+
+
 static List<Student> AddStudents()
 {
     return new List<Student>
